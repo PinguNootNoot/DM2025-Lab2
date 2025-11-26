@@ -1,0 +1,246 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Earthly disasters possibly caused by a creator who has been absent as the world has lost 
+hope—the religious allegory embedded in “Ad Astra” is <span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">crystal clear</span> if you look for it, but 
+<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">never highlighted in a way that takes away from the film’s urgency</span>. Science fiction is often 
+about search for meaning, but this one literally tells the story of man’s quest to find He who 
+created him and get some answers, including why He left us behind. McBride’s journey 
+takes him first to the moon, which has been briefly <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">reimagined as a tourist trap</span>, complete 
+with a Subway, and then to Mars, which is the furthest reach that man has colonized. As in 
+Gray’s last film, “The Lost City of Z,” there’s <span class="lx-highlight" data-idx="3" style="background-color:#C8E6C9;">an element of how journey and exploration 
+change a man</span>. The hero with the perfect BPM starts to feel his pulse elevate as he leaves 
+the comforts of his routine and his home, and as the stakes of his adventure rise. And Gray 
+never loses the human intimacy of his story, <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">keeping us tied to McBride’s POV, experiencing 
+only what he does and knowing only what he does</span>. The result is a film that <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">feels both 
+massive and deeply personal with its themes</span>, which is <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">no easy feat</span>. 
+
+Don’t get me wrong, while this is a deeply philosophical film there are also <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">traditional 
+action elements</span> and what <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">feel like real stakes</span> throughout McBride’s journey. People die. 
+People make mistakes. People are selfish, scared, and greedy. It feels like McBride’s 
+encounters with others along his journey, including characters played by Donald 
+Sutherland and Ruth Negga, are <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">designed to illuminate the humanity within him</span>. The 
+perfect man who fell to Earth becomes imperfect as he reaches ever closer to his creator, 
+and as he sees the imperfections of those around him. 
+
+Through it all, Pitt carries the emotional and physical weight in <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">one of the most subtle and 
+graceful performances of his career</span>. A lot of directors would have been too enraptured with 
+the grandeur of the space around him or the details of the interstellar travel, but Gray 
+allows the camera to linger on Pitt’s face in ways no other director really has before, and it 
+leads to what’s <span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">arguably Pitt’s most complex performance</span>. <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">Pitt avoids showy choices at 
+every turn</span>, but <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">he also doesn’t err in the other direction and make McBride too stoic</span>. <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">It’s a 
+perfectly calibrated performance</span>. With his work here and in “Once Upon a Time … in 
+Hollywood,” <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">2019 is the best year of his career</span>. <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">They’re both instant classic performances</span>, 
+and in such completely different ways, <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">illustrate his underrated range as an actor</span>. 
+
+Of course, as with all of Gray’s films, <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">the craftsmanship here is top-notch</span>. The delicate use 
+of color in different sections of the film from the black-and-white of the moon to a rusty red 
+of Mars and beyond <span class="lx-highlight" data-idx="19" style="background-color:#C8E6C9;">makes for a mesmerizing visual palette</span>, and the cinematography by
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+<span class="lx-highlight" data-idx="20" style="background-color:#C8E6C9;">Hoyte Van Hoytema sometimes echoes his work on “Interstellar”</span> in how it <span class="lx-highlight" data-idx="21" style="background-color:#C8E6C9;">balances 
+extreme close-ups of masked space travelers with the vastness of space</span>. Also <span class="lx-highlight" data-idx="22" style="background-color:#C8E6C9;">particularly 
+effective is the score by Max Richter</span>, which is somehow both <span class="lx-highlight" data-idx="23" style="background-color:#C8E6C9;">intimately eerie and grandiose 
+at the same time</span>.  
+
+We are in an era of what some are calling highbrow sci-fi as films like “Gravity,” “Arrival,” and 
+“Interstellar” make high profits and reap major awards consideration. Neither seems likely 
+for “Ad Astra.” <span class="lx-highlight" data-idx="24" style="background-color:#C8E6C9;">It’s a bit too strange to be a major box office hit</span>, and it’s being released by a 
+studio in flux as it transitions to Disney ownership. Still, <span class="lx-highlight" data-idx="25" style="background-color:#C8E6C9;">time will be kind to Gray’s film</span>. It 
+may take place in the future, but <span class="lx-highlight" data-idx="26" style="background-color:#C8E6C9;">it says something that will always be current</span> about our 
+quest for meaning in a world in which it sometimes feels like that which we used to believe 
+in and rely on no longer comforts us in the same way. “Ad Astra” is <span class="lx-highlight" data-idx="27" style="background-color:#C8E6C9;">deeply moving</span> with <span class="lx-highlight" data-idx="28" style="background-color:#C8E6C9;">lines 
+and ideas in its final scenes that <span class="lx-highlight" data-idx="29" style="background-color:#D2E3FC;">worked on my emotions in ways I wasn’t at all expecting</span></span>. 
+Be patient with it. Invest in it. <span class="lx-highlight" data-idx="30" style="background-color:#C8E6C9;">The destination is worth the journey</span>.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="30" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/31</span> |
+          Pos <span id="posInfo">[159-172]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "crystal clear", "color": "#C8E6C9", "startPos": 159, "endPos": 172, "beforeText": "*\n&quot;&quot;&quot;\nEarthly disasters possibly caused by a creator who has been absent as the world has lost \nhope\u2014the religious allegory embedded in \u201cAd Astra\u201d is ", "extractionText": "crystal clear", "afterText": " if you look for it, but \nnever highlighted in a way that takes away from the film\u2019s urgency. Science fiction is often \nabout search for meaning, but ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the religious allegory</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">crystal clear</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "never highlighted in a way that takes away from the film\u2019s urgency", "color": "#C8E6C9", "startPos": 198, "endPos": 264, "beforeText": " by a creator who has been absent as the world has lost \nhope\u2014the religious allegory embedded in \u201cAd Astra\u201d is crystal clear if you look for it, but \n", "extractionText": "never highlighted in a way that takes away from the film\u2019s urgency", "afterText": ". Science fiction is often \nabout search for meaning, but this one literally tells the story of man\u2019s quest to find He who \ncreated him and get some a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the religious allegory</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">never highlighted in a way that takes away from the film\u2019s urgency</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "reimagined as a tourist trap", "color": "#C8E6C9", "startPos": 526, "endPos": 554, "beforeText": "ind He who \ncreated him and get some answers, including why He left us behind. McBride\u2019s journey \ntakes him first to the moon, which has been briefly ", "extractionText": "reimagined as a tourist trap", "afterText": ", complete \nwith a Subway, and then to Mars, which is the furthest reach that man has colonized. As in \nGray\u2019s last film, \u201cThe Lost City of Z,\u201d there\u2019", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the moon</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">reimagined as a tourist trap</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "an element of how journey and exploration change a man", "color": "#C8E6C9", "startPos": 706, "endPos": 761, "beforeText": "complete \nwith a Subway, and then to Mars, which is the furthest reach that man has colonized. As in \nGray\u2019s last film, \u201cThe Lost City of Z,\u201d there\u2019s ", "extractionText": "an element of how journey and exploration \nchange a man", "afterText": ". The hero with the perfect BPM starts to feel his pulse elevate as he leaves \nthe comforts of his routine and his home, and as the stakes of his adve", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">journey and exploration</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">how journey and exploration change a man</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "keeping us tied to McBride\u2019s POV, experiencing only what he does and knowing only what he does", "color": "#C8E6C9", "startPos": 978, "endPos": 1073, "beforeText": " he leaves \nthe comforts of his routine and his home, and as the stakes of his adventure rise. And Gray \nnever loses the human intimacy of his story, ", "extractionText": "keeping us tied to McBride\u2019s POV, experiencing \nonly what he does and knowing only what he does", "afterText": ". The result is a film that feels both \nmassive and deeply personal with its themes, which is no easy feat. \n \nDon\u2019t get me wrong, while this is a dee", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">keeping us tied to McBride\u2019s POV</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "feels both massive and deeply personal with its themes", "color": "#C8E6C9", "startPos": 1101, "endPos": 1156, "beforeText": "man intimacy of his story, keeping us tied to McBride\u2019s POV, experiencing \nonly what he does and knowing only what he does. The result is a film that ", "extractionText": "feels both \nmassive and deeply personal with its themes", "afterText": ", which is no easy feat. \n \nDon\u2019t get me wrong, while this is a deeply philosophical film there are also traditional \naction elements and what feel li", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">massive and deeply personal</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "no easy feat", "color": "#C8E6C9", "startPos": 1167, "endPos": 1179, "beforeText": "iencing \nonly what he does and knowing only what he does. The result is a film that feels both \nmassive and deeply personal with its themes, which is ", "extractionText": "no easy feat", "afterText": ". \n \nDon\u2019t get me wrong, while this is a deeply philosophical film there are also traditional \naction elements and what feel like real stakes througho", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film feeling both massive and deeply personal</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">no easy feat</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "traditional action elements", "color": "#C8E6C9", "startPos": 1261, "endPos": 1289, "beforeText": " \nmassive and deeply personal with its themes, which is no easy feat. \n \nDon\u2019t get me wrong, while this is a deeply philosophical film there are also ", "extractionText": "traditional \naction elements", "afterText": " and what feel like real stakes throughout McBride\u2019s journey. People die. \nPeople make mistakes. People are selfish, scared, and greedy. It feels like", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">traditional action elements</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "feel like real stakes", "color": "#C8E6C9", "startPos": 1299, "endPos": 1320, "beforeText": " themes, which is no easy feat. \n \nDon\u2019t get me wrong, while this is a deeply philosophical film there are also traditional \naction elements and what ", "extractionText": "feel like real stakes", "afterText": " throughout McBride\u2019s journey. People die. \nPeople make mistakes. People are selfish, scared, and greedy. It feels like McBride\u2019s \nencounters with oth", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">McBride\u2019s journey</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">real stakes</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "designed to illuminate the humanity within him", "color": "#C8E6C9", "startPos": 1563, "endPos": 1609, "beforeText": " and greedy. It feels like McBride\u2019s \nencounters with others along his journey, including characters played by Donald \nSutherland and Ruth Negga, are ", "extractionText": "designed to illuminate the humanity within him", "afterText": ". The \nperfect man who fell to Earth becomes imperfect as he reaches ever closer to his creator, \nand as he sees the imperfections of those around him", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">McBride\u2019s encounters with others</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">designed to illuminate the humanity within him</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "one of the most subtle and graceful performances of his career", "color": "#C8E6C9", "startPos": 1830, "endPos": 1893, "beforeText": "er closer to his creator, \nand as he sees the imperfections of those around him. \n \nThrough it all, Pitt carries the emotional and physical weight in ", "extractionText": "one of the most subtle and \ngraceful performances of his career", "afterText": ". A lot of directors would have been too enraptured with \nthe grandeur of the space around him or the details of the interstellar travel, but Gray \nal", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt\u2019s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">subtle and graceful</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "arguably Pitt\u2019s most complex performance", "color": "#C8E6C9", "startPos": 2153, "endPos": 2193, "beforeText": "of the interstellar travel, but Gray \nallows the camera to linger on Pitt\u2019s face in ways no other director really has before, and it \nleads to what\u2019s ", "extractionText": "arguably Pitt\u2019s most complex performance", "afterText": ". Pitt avoids showy choices at \nevery turn, but he also doesn\u2019t err in the other direction and make McBride too stoic. It\u2019s a \nperfectly calibrated pe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">most complex</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "Pitt avoids showy choices at every turn", "color": "#C8E6C9", "startPos": 2195, "endPos": 2235, "beforeText": "ws the camera to linger on Pitt\u2019s face in ways no other director really has before, and it \nleads to what\u2019s arguably Pitt\u2019s most complex performance. ", "extractionText": "Pitt avoids showy choices at \nevery turn", "afterText": ", but he also doesn\u2019t err in the other direction and make McBride too stoic. It\u2019s a \nperfectly calibrated performance. With his work here and in \u201cOnce", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">avoids showy choices</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "he also doesn\u2019t err in the other direction and make McBride too stoic", "color": "#C8E6C9", "startPos": 2241, "endPos": 2310, "beforeText": " no other director really has before, and it \nleads to what\u2019s arguably Pitt\u2019s most complex performance. Pitt avoids showy choices at \nevery turn, but ", "extractionText": "he also doesn\u2019t err in the other direction and make McBride too stoic", "afterText": ". It\u2019s a \nperfectly calibrated performance. With his work here and in \u201cOnce Upon a Time \u2026 in \nHollywood,\u201d 2019 is the best year of his career. They\u2019re", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">doesn&#x27;t err... too stoic</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "It\u2019s a perfectly calibrated performance", "color": "#C8E6C9", "startPos": 2312, "endPos": 2352, "beforeText": "Pitt\u2019s most complex performance. Pitt avoids showy choices at \nevery turn, but he also doesn\u2019t err in the other direction and make McBride too stoic. ", "extractionText": "It\u2019s a \nperfectly calibrated performance", "afterText": ". With his work here and in \u201cOnce Upon a Time \u2026 in \nHollywood,\u201d 2019 is the best year of his career. They\u2019re both instant classic performances, \nand i", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s performance</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">perfectly calibrated</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "2019 is the best year of his career", "color": "#C8E6C9", "startPos": 2416, "endPos": 2451, "beforeText": "e other direction and make McBride too stoic. It\u2019s a \nperfectly calibrated performance. With his work here and in \u201cOnce Upon a Time \u2026 in \nHollywood,\u201d ", "extractionText": "2019 is the best year of his career", "afterText": ". They\u2019re both instant classic performances, \nand in such completely different ways, illustrate his underrated range as an actor. \n \nOf course, as wit", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s career</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">best year</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "They\u2019re both instant classic performances", "color": "#C8E6C9", "startPos": 2453, "endPos": 2494, "beforeText": "o stoic. It\u2019s a \nperfectly calibrated performance. With his work here and in \u201cOnce Upon a Time \u2026 in \nHollywood,\u201d 2019 is the best year of his career. ", "extractionText": "They\u2019re both instant classic performances", "afterText": ", \nand in such completely different ways, illustrate his underrated range as an actor. \n \nOf course, as with all of Gray\u2019s films, the craftsmanship he", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s performances</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">instant classic</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "illustrate his underrated range as an actor", "color": "#C8E6C9", "startPos": 2536, "endPos": 2579, "beforeText": "Upon a Time \u2026 in \nHollywood,\u201d 2019 is the best year of his career. They\u2019re both instant classic performances, \nand in such completely different ways, ", "extractionText": "illustrate his underrated range as an actor", "afterText": ". \n \nOf course, as with all of Gray\u2019s films, the craftsmanship here is top-notch. The delicate use \nof color in different sections of the film from th", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Pitt&#x27;s range</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">underrated range</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "the craftsmanship here is top-notch", "color": "#C8E6C9", "startPos": 2624, "endPos": 2659, "beforeText": "classic performances, \nand in such completely different ways, illustrate his underrated range as an actor. \n \nOf course, as with all of Gray\u2019s films, ", "extractionText": "the craftsmanship here is top-notch", "afterText": ". The delicate use \nof color in different sections of the film from the black-and-white of the moon to a rusty red \nof Mars and beyond makes for a mes", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The craftsmanship</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">top-notch</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "makes for a mesmerizing visual palette", "color": "#C8E6C9", "startPos": 2794, "endPos": 2832, "beforeText": "re is top-notch. The delicate use \nof color in different sections of the film from the black-and-white of the moon to a rusty red \nof Mars and beyond ", "extractionText": "makes for a mesmerizing visual palette", "afterText": ", and the cinematography by\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nHoyte Van Hoytema sometimes echoes his work on \u201cInterstellar\u201d in how it balances \nextreme close-ups of", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The use of color</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">mesmerizing visual palette</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "Hoyte Van Hoytema sometimes echoes his work on \u201cInterstellar\u201d", "color": "#C8E6C9", "startPos": 2880, "endPos": 2941, "beforeText": " black-and-white of the moon to a rusty red \nof Mars and beyond makes for a mesmerizing visual palette, and the cinematography by\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\n", "extractionText": "Hoyte Van Hoytema sometimes echoes his work on \u201cInterstellar\u201d", "afterText": " in how it balances \nextreme close-ups of masked space travelers with the vastness of space. Also particularly \neffective is the score by Max Richter,", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Hoyte Van Hoytema&#x27;s cinematography</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">echoes his work on &#x27;Interstellar&#x27;</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "balances extreme close-ups of masked space travelers with the vastness of space", "color": "#C8E6C9", "startPos": 2952, "endPos": 3032, "beforeText": "r a mesmerizing visual palette, and the cinematography by\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nHoyte Van Hoytema sometimes echoes his work on \u201cInterstellar\u201d in how it ", "extractionText": "balances \nextreme close-ups of masked space travelers with the vastness of space", "afterText": ". Also particularly \neffective is the score by Max Richter, which is somehow both intimately eerie and grandiose \nat the same time.  \n \nWe are in an e", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Hoyte Van Hoytema&#x27;s cinematography</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">balances extreme close-ups... with the vastness</span>}</div>"}, {"index": 22, "class": "opinion_statement", "text": "particularly effective is the score by Max Richter", "color": "#C8E6C9", "startPos": 3039, "endPos": 3090, "beforeText": " Hoytema sometimes echoes his work on \u201cInterstellar\u201d in how it balances \nextreme close-ups of masked space travelers with the vastness of space. Also ", "extractionText": "particularly \neffective is the score by Max Richter", "afterText": ", which is somehow both intimately eerie and grandiose \nat the same time.  \n \nWe are in an era of what some are calling highbrow sci-fi as films like ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The score by Max Richter</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">particularly effective</span>}</div>"}, {"index": 23, "class": "opinion_statement", "text": "intimately eerie and grandiose at the same time", "color": "#C8E6C9", "startPos": 3114, "endPos": 3162, "beforeText": "treme close-ups of masked space travelers with the vastness of space. Also particularly \neffective is the score by Max Richter, which is somehow both ", "extractionText": "intimately eerie and grandiose \nat the same time", "afterText": ".  \n \nWe are in an era of what some are calling highbrow sci-fi as films like \u201cGravity,\u201d \u201cArrival,\u201d and \n\u201cInterstellar\u201d make high profits and reap maj", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The score by Max Richter</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">intimately eerie and grandiose</span>}</div>"}, {"index": 24, "class": "opinion_statement", "text": "It\u2019s a bit too strange to be a major box office hit", "color": "#C8E6C9", "startPos": 3375, "endPos": 3426, "beforeText": " as films like \u201cGravity,\u201d \u201cArrival,\u201d and \n\u201cInterstellar\u201d make high profits and reap major awards consideration. Neither seems likely \nfor \u201cAd Astra.\u201d ", "extractionText": "It\u2019s a bit too strange to be a major box office hit", "afterText": ", and it\u2019s being released by a \nstudio in flux as it transitions to Disney ownership. Still, time will be kind to Gray\u2019s film. It \nmay take place in t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">too strange</span>}</div>"}, {"index": 25, "class": "opinion_statement", "text": "time will be kind to Gray\u2019s film", "color": "#C8E6C9", "startPos": 3519, "endPos": 3551, "beforeText": "tra.\u201d It\u2019s a bit too strange to be a major box office hit, and it\u2019s being released by a \nstudio in flux as it transitions to Disney ownership. Still, ", "extractionText": "time will be kind to Gray\u2019s film", "afterText": ". It \nmay take place in the future, but it says something that will always be current about our \nquest for meaning in a world in which it sometimes fe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Gray&#x27;s film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">time will be kind</span>}</div>"}, {"index": 26, "class": "opinion_statement", "text": "it says something that will always be current", "color": "#C8E6C9", "startPos": 3591, "endPos": 3636, "beforeText": "g released by a \nstudio in flux as it transitions to Disney ownership. Still, time will be kind to Gray\u2019s film. It \nmay take place in the future, but ", "extractionText": "it says something that will always be current", "afterText": " about our \nquest for meaning in a world in which it sometimes feels like that which we used to believe \nin and rely on no longer comforts us in the s", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film&#x27;s message</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">always be current</span>}</div>"}, {"index": 27, "class": "opinion_statement", "text": "deeply moving", "color": "#C8E6C9", "startPos": 3809, "endPos": 3822, "beforeText": "eaning in a world in which it sometimes feels like that which we used to believe \nin and rely on no longer comforts us in the same way. \u201cAd Astra\u201d is ", "extractionText": "deeply moving", "afterText": " with lines \nand ideas in its final scenes that worked on my emotions in ways I wasn\u2019t at all expecting. \nBe patient with it. Invest in it. The destin", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Ad Astra</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">deeply moving</span>}</div>"}, {"index": 28, "class": "opinion_statement", "text": "lines and ideas in its final scenes that worked on my emotions in ways I wasn\u2019t at all expecting", "color": "#C8E6C9", "startPos": 3828, "endPos": 3925, "beforeText": "n which it sometimes feels like that which we used to believe \nin and rely on no longer comforts us in the same way. \u201cAd Astra\u201d is deeply moving with ", "extractionText": "lines \nand ideas in its final scenes that worked on my emotions in ways I wasn\u2019t at all expecting", "afterText": ". \nBe patient with it. Invest in it. The destination is worth the journey.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">lines and ideas in its final scenes</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">worked on my emotions in ways I wasn\u2019t at all expecting</span>}</div>"}, {"index": 29, "class": "audience_impact", "text": "worked on my emotions in ways I wasn\u2019t at all expecting", "color": "#D2E3FC", "startPos": 3870, "endPos": 3925, "beforeText": " we used to believe \nin and rely on no longer comforts us in the same way. \u201cAd Astra\u201d is deeply moving with lines \nand ideas in its final scenes that ", "extractionText": "worked on my emotions in ways I wasn\u2019t at all expecting", "afterText": ". \nBe patient with it. Invest in it. The destination is worth the journey.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">surprised, moved</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">lines and ideas in its final scenes</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">me</span>}</div>"}, {"index": 30, "class": "opinion_statement", "text": "The destination is worth the journey", "color": "#C8E6C9", "startPos": 3962, "endPos": 3998, "beforeText": "ply moving with lines \nand ideas in its final scenes that worked on my emotions in ways I wasn\u2019t at all expecting. \nBe patient with it. Invest in it. ", "extractionText": "The destination is worth the journey", "afterText": ".\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The destination</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">worth the journey</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
