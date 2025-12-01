@@ -30,5 +30,6 @@ dependencies = [
     "seaborn==0.13.2",
     "tensorflow==2.20.0",
     "tensorflow-hub==0.16.1",
+    "transformers>=4.57.3",
     "umap-learn==0.5.9.post2",
 ]
